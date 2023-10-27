@@ -18,7 +18,6 @@ RUN yes | pecl install xdebug-3.2.0 \
     && docker-php-ext-enable xdebug \
     && echo "xdebug.mode=debug\n" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
     && echo "xdebug.idekey=PHPSTORM\n" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
-    && echo "xdebug.client_port=9000\n" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
     && echo "xdebug.discover_client_host=0\n" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 
 # Change TimeZone
